@@ -230,7 +230,7 @@ header {
     font-weight: 500;
 }
 
-/* Styling Tabel Kesehatan Bumi */
+/* Styling Tabel Kesehatan Bumi & Interaktif */
 .table-section {
     background: white;
     padding: 25px;
@@ -255,6 +255,14 @@ header {
 .health-table th {
     background-color: #2e7d32;
     color: white;
+}
+
+.health-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.health-table tbody tr:hover {
+    background-color: #e8f5e9;
 }
 
 .status-bad {
