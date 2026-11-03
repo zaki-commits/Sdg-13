@@ -21,21 +21,86 @@
     </header>
 
     <main class="container">
-        <h2>Edukasi Lingkungan</h2>
-        <p>Meningkatkan kesadaran akan pentingnya menjaga ekosistem bumi.</p>
+        <h2>Pusat Edukasi & Kondisi Lingkungan</h2>
+        <p>Halaman ini dirancang untuk membekali kamu dengan wawasan mendalam mengenai kondisi ekosistem global saat ini. Pengetahuan adalah langkah awal menuju perubahan nyata.</p>
 
+        <!-- Grafik Batang: Kondisi Hutan di Bumi Saat Ini -->
+        <section class="graph-section">
+            <h3>📊 Grafik Tren Luas Hutan Global (Juta Hektar)</h3>
+            <p class="graph-desc">Perbandingan estimasi luas hutan dunia dari dekade ke dekade akibat deforestasi:</p>
+            
+            <div class="chart-container">
+                <div class="bar-group">
+                    <span class="bar-value">4,120 Juta Ha</span>
+                    <div class="bar" style="height: 90%;"></div>
+                    <span class="bar-label">Tahun 1990</span>
+                </div>
+                <div class="bar-group">
+                    <span class="bar-value">4,060 Juta Ha</span>
+                    <div class="bar" style="height: 80%;"></div>
+                    <span class="bar-label">Tahun 2010</span>
+                </div>
+                <div class="bar-group">
+                    <span class="bar-value">3,990 Juta Ha</span>
+                    <div class="bar" style="height: 70%;"></div>
+                    <span class="bar-label">Tahun 2020</span>
+                </div>
+                <div class="bar-group critical">
+                    <span class="bar-value">3,950 Juta Ha</span>
+                    <div class="bar" style="height: 60%; background-color: #d32f2f;"></div>
+                    <span class="bar-label">Saat Ini (2026)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabel Perbandingan Kesehatan Bumi -->
+        <section class="table-section">
+            <h3>📋 Tabel Perbandingan Kesehatan Bumi</h3>
+            <p>Analisis cepat antara kondisi bumi yang ideal versus kondisi faktual saat ini:</p>
+            <table class="health-table">
+                <thead>
+                    <tr>
+                        <th>Indikator Ekologi</th>
+                        <th>Kondisi Ideal (Lestari)</th>
+                        <th>Kondisi Nyata Saat Ini (Darurat)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Emisi Karbon</strong></td>
+                        <td>Terkendali & terserap seimbang oleh alam</td>
+                        <td><span class="status-bad">Lonjakan tinggi akibat bahan bakar fosil</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cakupan Hutan</strong></td>
+                        <td>Mencakup >45% daratan bumi</td>
+                        <td><span class="status-bad">Terus menyusut akibat alih fungsi lahan</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pencemaran Laut</strong></td>
+                        <td>Bersih dari limbah mikroplastik</td>
+                        <td><span class="status-bad">Jutaan ton sampah plastik mencemari ekosistem</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Keanekaragaman Hayati</strong></td>
+                        <td>Habitat satwa liar terjaga aman</td>
+                        <td><span class="status-bad">Banyak spesies masuk kategori terancam punah</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <h3 style="margin-top: 40px;">Topik Edukasi Lainnya</h3>
         <div class="grid">
             <article class="edu-item">
-                <h3>1. Pemanasan Global</h3>
-                <p>Pemanasan global terjadi akibat peningkatan emisi gas rumah kaca di atmosfer yang memicu perubahan iklim ekstrem.</p>
+                <span class="badge">Iklim</span>
+                <h3>Pemanasan Global</h3>
+                <p>Peningkatan emisi gas rumah kaca memicu kenaikan suhu rata-rata permukaan bumi.</p>
             </article>
             <article class="edu-item">
-                <h3>2. Bahaya Sampah Plastik</h3>
-                <p>Plastik membutuhkan waktu ratusan tahun untuk terurai dan dapat merusak ekosistem laut serta rantai makanan.</p>
-            </article>
-            <article class="edu-item">
-                <h3>3. Pentingnya Reboisasi</h3>
-                <p>Hutan adalah paru-paru dunia. Menanam pohon membantu menyerap karbon dioksida dan menyediakan oksigen segar.</p>
+                <span class="badge">Limbah</span>
+                <h3>Bahaya Sampah Plastik</h3>
+                <p>Plastik memerlukan ratusan tahun untuk terurai dan merusak rantai makanan laut.</p>
             </article>
         </div>
     </main>
