@@ -1,146 +1,157 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Tambahan Style untuk Kartu Beranda Bisa Diklik */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
-body {
-    line-height: 1.6;
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card-cta {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Intro Text */
+.intro-text {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Grafik Batang CSS */
+.graph-section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 30px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.graph-desc {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 250px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 20px 10px 0 10px;
+    margin-top: 20px;
+}
+
+.bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.bar {
+    width: 40px;
+    background-color: #4caf50;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s;
+}
+
+.bar-value {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: bold;
     color: #333;
-    background-color: #f4f9f4;
+    text-align: center;
 }
 
-/* Header & Navigation */
-header {
+.bar-label {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Tabel Kesehatan Bumi */
+.table-section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 30px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.health-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.health-table th, .health-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.health-table th {
     background-color: #2e7d32;
     color: white;
-    padding: 1rem 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    font-size: 1.5rem;
+.status-bad {
+    color: #d32f2f;
     font-weight: bold;
 }
 
-.nav-links {
-    list-style: none;
+/* Artikel Card & Link Eksternal */
+.article-list {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    margin-top: 20px;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover, .nav-links a.active {
-    color: #a5d6a7;
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000') center/cover no-repeat;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #388e3c;
-}
-
-/* Container & Layout */
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.features, .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.card, .edu-item, .article-card {
+.article-card {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.action-list {
-    margin-top: 20px;
-    padding-left: 20px;
+.article-card h3 {
+    margin-bottom: 8px;
+    color: #1b5e20;
 }
 
-.action-list li {
-    margin-bottom: 15px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1b5e20;
+.external-btn {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #2e7d32;
     color: white;
-    margin-top: 40px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .hero-content h1 {
-        font-size: 2rem;
-    }
+.external-btn:hover {
+    background-color: #1b5e20;
 }
